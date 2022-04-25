@@ -54,7 +54,7 @@
       button.addEventListener('click', updateInput);
 
       function updateInput() {
-        const a = new Uint8Array(46);
+        const a = new Uint8Array(48);
         window.crypto.getRandomValues(a);
         const key = (btoa(String.fromCharCode.apply(null, a)));
         input.value = key;
